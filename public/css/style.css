@@ -1,37 +1,51 @@
 body {
-    background-color: #C1CDF9;
+    background-color: #dce2f7;
     margin-top: 0;
 }
 
 .infoHeader {
-    height: 50px;
-    background-color: #B69FF2;
-
     padding: 20px 15px;
     overflow: hidden;
 
     margin-top: 0px;
 
     .logo {
-        float: left;
+        position: absolute;
         margin: 0;
+        font-size: 32px;
+        
     }
     .headerRight {
         float: right;
         margin: 0;
 
         a {
-            margin-left: 5px;
+            margin-left: 15px;
+
+            font-size: 32px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+
+            border-radius: 4px;
+            padding: 6px;
+            line-height: 50px;
+
+            transition: background-color 0.05s;
+        }
+        a:hover {
+            background-color: #B188EF;
         }
     }
 
     @media screen and (max-width: 500px) {
-        a {
+        .headerRight a {
           float: none;
           display: block;
           text-align: left;
         }
-        .header-right {
+        .headerRight {
           float: none;
         }
       }
