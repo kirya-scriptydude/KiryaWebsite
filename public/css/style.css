@@ -1,3 +1,27 @@
-.exampleClass {
-    color: red;
+body {
+    background-color: #C1CDF9;
+    margin-top: 0;
+}
+
+.infoHeader {
+    height: 50px;
+    background-color: #B69FF2;
+
+    padding: 20px 15px;
+    overflow: hidden;
+
+    margin-top: 0px;
+
+    .logo {
+        float: left;
+        margin: 0;
+    }
+    .headerRight {
+        float: right;
+        margin: 0;
+
+        a {
+            margin-left: 5px;
+        }
+    }
 }
