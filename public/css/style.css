@@ -12,7 +12,8 @@ body {
     .logo {
         position: absolute;
         margin: 0;
-        font-size: 32px;
+        font-size:45px;
+        font-family: 'Arial Narrow Bold', sans-serif;
         
     }
     .headerRight {
@@ -47,6 +48,9 @@ body {
         }
         .headerRight {
           float: none;
+        }
+        .logo {
+            position: relative;
         }
       }
 }
