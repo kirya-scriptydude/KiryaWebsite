@@ -10,4 +10,11 @@ app.get("/", (req, res) => {
     res.render("index");
 })
 
+const worksRouter = require("./routes/works");
+app.use("/works", worksRouter);
+
+app.get("/contact", (req, res) => {
+    res.send("contact page");
+})
+
 app.listen(3000);
