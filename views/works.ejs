@@ -10,5 +10,13 @@
 </head>
 <body>
     <div id="website-header"></div>
+
+    <div class="works-container">
+        <% works.forEach(works => { %>
+            <div class="work-tile">
+                <p class="title"><%= works.title %></p>
+            </div>
+       <% }) %>
+    </div>
 </body>
 </html>

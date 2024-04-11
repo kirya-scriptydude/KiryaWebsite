@@ -104,3 +104,41 @@ body {
         background-color: #b188ef36;
     }
 }
+
+
+.works-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    .work-tile {
+        margin: 10px;
+        background-color: rgb(187, 200, 247);
+        height: 300px;
+        width: 300px;
+
+        border-color: #B188EF;
+        border-radius:  10px;
+        border: 5px solid #242941;
+
+        transition: all 0.1s;
+        p {
+            font-family: Poppins, Arial;
+        }
+        .title {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+
+    .work-tile:hover {
+        border: 5px solid #3f476b6c;
+    }
+}
