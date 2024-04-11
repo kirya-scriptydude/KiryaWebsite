@@ -7,7 +7,9 @@ const workpostSchema = new mongoose.Schema({
         lowercase: true,
         immutable: true
     },
-    
+
     title: String,
     description: String
 })
+
+module.exports = mongoose.model("WorksPost", workpostSchema);
