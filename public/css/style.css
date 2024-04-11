@@ -1,6 +1,8 @@
+@font-face { font-family: Poppins; src: url("/font/Poppins-Regular.ttf"); } 
+
 body {
     background-color: #dce2f7;
-    margin-top: 0;
+    margin: 0;
 }
 
 .infoHeader {
@@ -15,6 +17,9 @@ body {
         font-size:45px;
         font-family: 'Arial Narrow Bold', sans-serif;
         transition: font-size 0.1s;
+
+        text-decoration: none;
+        color: black;
     }
     .logo:hover {
         font-size: 47px;
@@ -57,4 +62,45 @@ body {
             position: relative;
         }
       }
+}
+
+.content-div {
+    padding: 20px 15px;
+    overflow: hidden;
+
+    margin-top: 35px;
+
+
+    background-color: rgb(187, 200, 247);
+
+    height: 700px;
+
+    align-content: center;
+
+    p {
+        font-family: Poppins, Arial;
+    }
+
+    .content-left {
+        float: left;
+        margin-left: 15%;
+        width: 35%;
+    }
+    .content-right {
+        float: right;
+        margin-right: 35%;
+
+    }
+
+    .content-highlight {
+        background-color: #b188ef00;
+        padding: 10px 10px;
+        border-radius: 5px;
+        
+
+        transition: background-color 0.1s;
+    }
+    .content-highlight:hover {
+        background-color: #b188ef36;
+    }
 }
