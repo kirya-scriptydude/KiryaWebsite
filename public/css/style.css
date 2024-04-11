@@ -14,8 +14,12 @@ body {
         margin: 0;
         font-size:45px;
         font-family: 'Arial Narrow Bold', sans-serif;
-        
+        transition: font-size 0.1s;
     }
+    .logo:hover {
+        font-size: 47px;
+    }
+
     .headerRight {
         float: right;
         margin: 0;

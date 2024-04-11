@@ -14,7 +14,7 @@ const worksRouter = require("./routes/works");
 app.use("/works", worksRouter);
 
 app.get("/contact", (req, res) => {
-    res.send("contact page");
+    res.render("contact");
 })
 
 app.listen(3000);
