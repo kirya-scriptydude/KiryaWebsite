@@ -1,7 +1,7 @@
 @font-face { font-family: Poppins; src: url("/font/Poppins-Regular.ttf"); } 
 
 body {
-    background-color: #dce2f7;
+    background-color: #c3c9e0;
     margin: 0;
 }
 
@@ -68,10 +68,9 @@ body {
     padding: 20px 15px;
     overflow: hidden;
 
+    background-color: #d8e0ff5d;
+
     margin-top: 35px;
-
-
-    background-color: rgb(187, 200, 247);
 
     height: 700px;
 
@@ -159,7 +158,7 @@ body {
 
     .trivia {
         font-size: 24px;
-        width: 600px;
+        width: 750px;
 
         font-family: Poppins, Arial;
     }
