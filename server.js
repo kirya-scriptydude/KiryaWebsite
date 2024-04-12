@@ -1,6 +1,10 @@
 //npm run devStart
+const DATABASE_URL = "mongodb://localhost/website";
 
 const express = require("express");
+const mongoose = require("mongoose");
+
+mongoose.connect(DATABASE_URL);
 
 const app = express();
 app.set("view engine", "ejs");
