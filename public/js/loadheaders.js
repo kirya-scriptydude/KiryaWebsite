@@ -1,9 +1,9 @@
 let appHeader = `
 <div class="infoHeader">
-    <a href="/" class="logo">kirya.com</p>
+    <a href="/" class="logo">kirya-website</p>
     <div class="headerRight">
         <a href="/works">Works</a>
-        <a href="">Commisions</a>
+        <a href="">Blog</a>
         <a href="/contact">Contact</a>
     </div>
 </div>
