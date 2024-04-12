@@ -75,20 +75,25 @@ body {
 
     height: 700px;
 
+    display: flex;
     align-content: center;
+    justify-content: center;
+
 
     p {
         font-family: Poppins, Arial;
+        text-align: center;
     }
 
     .content-left {
         float: left;
-        margin-left: 15%;
-        width: 35%;
+        margin-right: 15%;
+        width: 25%;
     }
     .content-right {
         float: right;
-        margin-right: 35%;
+        margin-left: 15%;
+        width: 25%;
 
     }
 
@@ -107,7 +112,7 @@ body {
 
 
 .works-container {
-    display: flex;
+    display: flexbox;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -119,7 +124,9 @@ body {
     margin-right: auto;
 
     .work-tile {
-        margin: 10px;
+        margin-left: 100px;
+        margin-right: 100px;
+
         background-color: rgb(187, 200, 247);
         height: 300px;
         width: 300px;
