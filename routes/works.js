@@ -1,13 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-router.get("/", (req, res) => {
-    const works = [{
-        title: "Test Article",
-        date: Date.now(),
-        description: "This is a test article woah"
-    }]
+const workScheme = require("./../models/work_post");
 
+router.get("/", async (req, res) => {
+    const works = await workScheme.find().sort({createdAt: "desc"});
     res.render("works", { works: works });
 })
 
