@@ -17,7 +17,12 @@
     <div class="works-container">
         <% works.forEach(works => { %>
             <div class="work-tile">
-                <p class="title"><%= works.title %></p>
+                <div style="flex-direction: row; display: flex;">
+                    <p style="font-size: 24px; margin-left: 5px;">Title</p>
+                    <p>01.02.03</p>
+                </div>
+                <p>Short Description</p>
+                
             </div>
        <% }) %>
     </div>
