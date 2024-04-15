@@ -1,7 +1,7 @@
 @font-face { font-family: Poppins; src: url("/font/Poppins-Regular.ttf"); } 
 
 body {
-    background-color: #c3c9e0;
+    background-color: #878c9e;
     margin: 0;
 }
 
@@ -106,6 +106,10 @@ body {
     }
     .content-highlight:hover {
         background-color: #b188ef36;
+    }
+
+    .content-right-gif {
+        left: 10%;
     }
 }
 
