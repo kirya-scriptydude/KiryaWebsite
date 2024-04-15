@@ -134,7 +134,7 @@ body {
     margin-right: auto;
 
     .work-tile {
-        background-color: #dbdbdb;
+        background-color: hsl(243, 43%, 83%);
         height: 150px;
         margin-bottom: 3%;
         padding: 10px 15px;
