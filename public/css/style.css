@@ -70,13 +70,15 @@ body {
 }
 
 .content-div {
+    display: flexbox;
     padding: 20px 15px;
+    flex-wrap: wrap;
 
     background-color: #98acff5d;
 
-    margin-top: 35px;
+    margin-top: 5%;
     
-    height: 700px;
+    height: 50%;
 
     display: flex;
     align-content: center;
@@ -116,7 +118,28 @@ body {
     }
 
     .content-right-gif {
-        left: 10%;
+        width: 512px;
+        height: 512px;
+        margin-top: 35px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .content-left {
+            float: none;
+        }
+        .content-left-expand-on-mobile {
+            width: 100%;
+            margin-top: 10%;
+        }
+        .content-hide-on-mobile {
+            display: none;
+        }
+        .content-right {
+            float: none;
+        }
+        p {
+            font-size: 12px;
+        }
     }
 }
 
@@ -162,5 +185,11 @@ body {
         font-size: 100%;
         width: 45%;
         font-family: Poppins, Arial;
+    }
+
+    @media screen and (max-width: 500px) {
+        .trivia {
+            font-size: 12px;
+        }
     }
 }

@@ -10,7 +10,6 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
     const workArticle = await workScheme.find().where({dirname: req.params.id});
-    console.log(workArticle);
 
     if (workArticle.length != 0) {
         res.render("posts/workpost", {workArticle: workArticle[0]})
