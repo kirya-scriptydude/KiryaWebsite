@@ -9,7 +9,6 @@ mongoose.connect(DATABASE_URL);
 async function tryParseJSON(err, data) {
     var obj = JSON.parse(data);
 
-    console.log(obj);
     if (obj.dirname != null || obj.dirname != "") {
         await saveToDB(obj);
     } else {
@@ -26,9 +25,10 @@ async function saveToDB(obj) {
         var workmodel = new workScheme({
             dirname: obj.dirname,
             title: obj.title,
-            description: obj.description
+            description: obj.description,
+            content: obj.content
         });
-        workmodel.save();
+        await workmodel.save();
         console.log("inserted a " + obj.dirname + " into db")
     } else return;
 }
