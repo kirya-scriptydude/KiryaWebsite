@@ -193,3 +193,35 @@ body {
         }
     }
 }
+
+.post-content {
+    font-family: Poppins, Arial;
+
+    .title {
+        text-align: center;
+        font-size: 64px;
+        font-weight: bold;
+        margin: 0;
+
+        color: white;
+        -webkit-text-stroke: 0.5px black;
+    }
+    .desc {
+        text-align: center;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .date {
+        text-align: center;
+        margin-top: 0;
+        font-style: italic;
+    }
+    .post-image {
+        display: block;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

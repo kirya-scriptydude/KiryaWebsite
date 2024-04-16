@@ -17,7 +17,12 @@ const workpostSchema = new mongoose.Schema({
         default: Date.now
     },
 
-    content: String
+    content: String,
+
+    imageDir: {
+        type: String,
+        default: "/images/placeholder.png"
+    }
 })
 
 module.exports = mongoose.model("WorksPost", workpostSchema);
