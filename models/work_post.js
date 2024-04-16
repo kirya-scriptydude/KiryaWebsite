@@ -36,7 +36,6 @@ const workpostSchema = new mongoose.Schema({
 })
 
 workpostSchema.pre("validate", function(next) {
-
     if (this.content) {
         this.sanitizedHtml = dompurify.sanitize(marked(this.content));
     }

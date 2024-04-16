@@ -29,16 +29,18 @@ app.get("/contact", (req, res) => {
 app.listen(3000);
 
 
-
-//COMMENT OUT STUFF WHEN NOT IN NEED OF SAVING STUFF
+//dirty little hack teehee
 const workpost = new workScheme({
-    dirname: "test-work-work",
-    title: "",
-    description: "",
-    content: `
-    # THIS IS REAL HOOD CLASSIC
-    ## YEAH
-    yeah shututp `,
+    dirname: "still-no-release",
+    title: "yeah whatever",
+    description: "yep",
+    content: 
+`
+# THIS IS REAL HOOD CLASSIC
+## YEAH
+yeah shututp
+`
+,
 
     imageDir: ""
 });
