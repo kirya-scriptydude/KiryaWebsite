@@ -1,0 +1,30 @@
+<style>
+    .submit-div{
+        display: flex;
+        flex-direction: column;
+        input {
+            margin-bottom: 10px;
+        }
+        textarea {
+            height: 500px;
+        }
+    }
+</style>
+
+<div class="submit-div">
+    <label for="dirname">ID</label>
+    <input required type="text" name="dirname" id="dirname">
+
+    <label for="title">Title</label>
+    <input required type="text" name="title" id="title">
+
+    <label for="desc">Short Description</label>
+    <input required type="text" name="desc" id="desc">
+
+    <label for="image">Image Path</label>
+    <input type="text" name="image" id="image">
+
+    <label for="content">Content</label>
+    <textarea required name="content" id="content"></textarea>
+    <button type="submit">Submit</button>
+</div>

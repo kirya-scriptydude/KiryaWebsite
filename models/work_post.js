@@ -43,4 +43,5 @@ workpostSchema.pre("validate", function(next) {
     next();
 })
 
+
 module.exports = mongoose.model("WorksPost", workpostSchema);

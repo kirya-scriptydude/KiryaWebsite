@@ -8,6 +8,27 @@ router.get("/", async (req, res) => {
     res.render("works", { works: works });
 })
 
+router.get("/new", (req, res) => {
+    res.render("create/workNew");
+});
+
+router.post("/", async (req, res) => {
+    var work = new workScheme({
+        dirname: req.body.dirname,
+        title: req.body.title,
+        description: req.body.desc,
+        imageDir: req.body.image,
+        content: req.body.content
+    })
+
+    try {
+        work = await work.save();
+        res.redirect(`/works/${work.dirname}`);
+    } catch(e) {
+        console.log(e);
+    }
+});
+
 router.get("/:id", async (req, res) => {
     const workArticle = await workScheme.find().where({dirname: req.params.id});
 

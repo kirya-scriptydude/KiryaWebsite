@@ -10,6 +10,7 @@ const workScheme = require("./models/work_post");
 const app = express();
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + '/public'));
+app.use(express.urlencoded({extended: false}));
 
 async function saveNewForm(postToSave) {
     await postToSave.save();
@@ -27,22 +28,3 @@ app.get("/contact", (req, res) => {
 })
 
 app.listen(3000);
-
-
-//dirty little hack teehee
-const workpost = new workScheme({
-    dirname: "still-no-release",
-    title: "yeah whatever",
-    description: "yep",
-    content: 
-`
-# THIS IS REAL HOOD CLASSIC
-## YEAH
-yeah shututp
-`
-,
-
-    imageDir: ""
-});
-
-//saveNewForm(workpost);
