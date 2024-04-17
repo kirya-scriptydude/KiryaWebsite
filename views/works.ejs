@@ -16,13 +16,18 @@
 
     <div class="works-container">
         <% works.forEach(function (work) { %>
-            <div class="work-tile">
-                <div style="flex-direction: row; display: flex;">
-                    <p style="font-size: 24px; margin-left: 5px;"><%= work.title %></p>
-                    <p><%= work.createdAt.toLocaleDateString() %></p>
+            <div class="work-container-grid">
+
+                <div class="work-tile">
+                    <div style="flex-direction: row; display: flex;">
+                        <p style="font-size: 24px; margin-left: 5px;"><%= work.title %></p>
+                        <p><%= work.createdAt.toLocaleDateString() %></p>
+                    </div>
+                    <p><%= work.description %></p>
+                    
                 </div>
-                <p><%= work.description %></p>
-                
+                <img src="<%= work.imageDir %>" alt="image">
+
             </div>
        <% }) %>
     </div>
