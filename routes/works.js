@@ -14,7 +14,7 @@ router.get("/new", (req, res) => {
 
 router.get("/edit/:id", async (req, res) => {
     const workArticle = await workScheme.find().where({dirname: req.params.id});
-    res.render("create/workNew", {work: workArticle});
+    res.render("create/workEdit", {work: workArticle});
 });
 
 router.post("/", async (req, res) => {
