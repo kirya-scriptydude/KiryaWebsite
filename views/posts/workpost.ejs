@@ -15,7 +15,7 @@
     <p class="desc"> <%= workArticle.description %></p>
     <p class="date"><%= workArticle.createdAt.toLocaleDateString() %></p>
 
-    <img src="<%= workArticle.imageDir %>" alt="post image" class="post-image"/>
+    <img src="<%= workArticle.imageDir %>" alt="image" class="post-image"/>
     <div class="post-content-div">
         <%-workArticle.sanitizedHtml%>
     </div>
