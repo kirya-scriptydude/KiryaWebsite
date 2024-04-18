@@ -1,8 +1,8 @@
 @font-face { font-family: Poppins; src: url("/font/Poppins-Regular.ttf"); } 
 
 body {
-    background: rgb(218,182,255);
-    background: linear-gradient(0deg, rgba(218,182,255,1) 0%, rgba(155,180,255,1) 49%, rgba(126,146,255,1) 100%);
+    background: rgb(173,186,255);
+    background: linear-gradient(0deg, rgba(173,186,255,1) 0%, rgba(224,232,255,1) 100%);
 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -15,6 +15,11 @@ body {
     overflow: hidden;
 
     margin-top: 0px;
+
+    border: 2px solid rgba(0, 0, 0, 0.644);
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
 
     .logo {
         position: absolute;
@@ -74,9 +79,9 @@ body {
     padding: 20px 15px;
     flex-wrap: wrap;
 
-    background-color: #98acff5d;
+    background-color: #98adff21;
 
-    margin-top: 5%;
+    margin-bottom: 2.5%;
     
     height: 50%;
 

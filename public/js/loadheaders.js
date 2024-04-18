@@ -3,7 +3,6 @@ let appHeader = `
     <a href="/" class="logo">kirya-website</p>
     <div class="headerRight">
         <a href="/works">Works</a>
-        <a href="">Blog</a>
         <a href="/contact">Contact</a>
     </div>
 </div>
