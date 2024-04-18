@@ -21,9 +21,9 @@
                 <div class="work-tile">
                     <div style="flex-direction: row; display: flex;">
                         <p style="font-size: 24px; margin-left: 5px;"><%= work.title %></p>
-                        <p><%= work.createdAt.toLocaleDateString() %></p>
+                        <p style="font-weight: 100;"><%= work.createdAt.toLocaleDateString() %></p>
                     </div>
-                    <p><%= work.description %></p>
+                    <p style="font-weight: 400;"><%= work.description %></p>
                     
                 </div>
                 <img src="<%= work.imageDir %>" alt="image">

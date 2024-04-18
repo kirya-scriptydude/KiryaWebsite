@@ -2,7 +2,7 @@
 
 body {
     background: rgb(173,186,255);
-    background: linear-gradient(0deg, rgba(173,186,255,1) 0%, rgba(224,232,255,1) 100%);
+    background: linear-gradient(0deg, rgba(173,186,255,1) 0%, rgba(224,232,255,1) 36%);
 
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,7 +29,8 @@ body {
         transition: font-size 0.1s;
 
         text-decoration: none;
-        color: black;
+        color: rgb(221, 244, 255);
+        -webkit-text-stroke: 1px #000000;
     }
     .logo:hover {
         font-size: 47px;
@@ -170,6 +171,13 @@ body {
         border: 1px solid rgb(0, 0, 0);
         border-radius: 10px;
     }
+
+    
+}
+@media screen and (max-width: 500px) {
+    .work-container-grid {
+        width: 100%;
+    }
 }
 
 .works-container {
@@ -194,6 +202,15 @@ body {
             font-weight: 600;
         }
     }
+}
+@media screen and (max-width: 500px) {
+    .works-container {
+        width: 100%;
+
+    }
+    .work-tile {
+        width: 95%
+    }    
 }
 
 .filter-container {
