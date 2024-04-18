@@ -6,6 +6,7 @@
     <title>Welcome</title>
 
     <link href="/css/style.css" rel="stylesheet" type="text/css">
+
     <script async src="/js/loadheaders.js"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
         </div>
 
         <div class="content-right" style="margin-left: 5%;">
-            <img src="/images/sukuna.gif" alt="my work example" class="content-right-gif content-hide-on-mobile">
+            <img src="" id="random-gif-image" alt="my work example" class="content-right-gif content-hide-on-mobile">
             <p></p>
         </div>
     </div>
@@ -36,4 +37,17 @@
         </div>
     </div>
 </body>
+
+<script>
+    function getRandomInt(min, max) {
+        const minCeiled = Math.ceil(min);
+        const maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+    }
+
+    const availablegifs = ["/images/sukuna.gif"];
+    let chosenGif = availablegifs[getRandomInt(0, availablegifs.length)];
+
+    document.getElementById("random-gif-image").src = chosenGif;
+</script>
 </html>
