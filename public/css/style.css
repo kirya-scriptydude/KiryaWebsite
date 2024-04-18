@@ -76,13 +76,12 @@ body {
 }
 
 .content-div {
-    display: flexbox;
     padding: 20px 15px;
     flex-wrap: wrap;
 
     background-color: #98adff21;
 
-    margin-bottom: 2.5%;
+    margin-bottom: 1%;
     
     height: 50%;
 
@@ -148,6 +147,11 @@ body {
         }
     }
 }
+@media screen and (max-width: 500px) {
+    .content-div {
+        flex-direction: column;
+    }
+}
 
 .work-container-grid {
     display: flex;
@@ -172,7 +176,9 @@ body {
         border-radius: 10px;
     }
 
-    
+    img:hover {
+        transform: scale(1.02);
+    }
 }
 @media screen and (max-width: 500px) {
     .work-container-grid {
@@ -256,6 +262,7 @@ body {
         margin-top: 0;
         font-style: italic;
     }
+
     .post-image {
         display: block;
         left: 0;

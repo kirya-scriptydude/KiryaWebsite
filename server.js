@@ -16,8 +16,9 @@ async function saveNewForm(postToSave) {
     await postToSave.save();
 }
 
-app.get("/", (req, res) => {
-    res.render("index");
+app.get("/", async (req, res) => {
+    const latestWork = await workScheme.findOne().sort({"createdAt": -1});
+    res.render("index", {work: latestWork});
 })
 
 const worksRouter = require("./routes/works");
